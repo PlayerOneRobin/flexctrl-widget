@@ -1,0 +1,18 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {"type": "TextBlock", "text": "FLEX / CTRL", "weight": "Bolder", "size": "Medium", "color": "Accent", "spacing": "None"},
+    {"type": "TextBlock", "text": "STARTTID", "size": "Small", "isSubtle": true, "spacing": "Medium"},
+    {"type": "TextBlock", "text": "${start}", "size": "ExtraLarge", "weight": "Bolder", "fontType": "Monospace", "spacing": "None"},
+    {"type": "TextBlock", "text": "BERÄKNAD HEMGÅNG", "size": "Small", "isSubtle": true, "spacing": "Medium"},
+    {"type": "TextBlock", "text": "${finish}", "size": "ExtraLarge", "weight": "Bolder", "color": "Good", "fontType": "Monospace", "spacing": "None"},
+    {"type": "TextBlock", "text": "8 h arbete + 40 min lunch", "size": "Small", "isSubtle": true, "spacing": "Medium"}
+  ],
+  "actions": [
+    {"type": "Action.Execute", "title": "−5 min", "verb": "minus5"},
+    {"type": "Action.Execute", "title": "Start nu", "verb": "now"},
+    {"type": "Action.Execute", "title": "+5 min", "verb": "plus5"}
+  ]
+}
